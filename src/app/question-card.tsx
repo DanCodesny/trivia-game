@@ -45,10 +45,10 @@ function QuestionCard({ question }: QuestionCardProps) {
             <RadioGroup value={selectedValue} onValueChange={handleChange}>
               {answers.map((answer, i) => {
                 return (
-                  <div className='flex gap-4'>
+                  <div key={i} className='flex gap-4'>
                     <RadioGroupItem
                       id={`${i}${answer}`}
-                      key={i}
+                      
                       value={answer}
                     />
                     <Label htmlFor={`${i}${answer}`}>{answer}</Label>
