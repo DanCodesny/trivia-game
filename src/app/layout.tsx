@@ -39,15 +39,6 @@ export default function RootLayout({
               loading: <LoaderCircleIcon />,
             }}
             richColors={true}
-            toastOptions={{
-              unstyled: true,
-              classNames: {
-                error: "bg-destructive text-destructive-foreground",
-                success: "bg-success text-success-foreground",
-                warning: "bg-warning text-warning-foreground",
-                info: "bg-info text-info-foreground",
-              }
-            }}
           />
         </ThemeProvider>
       </body>

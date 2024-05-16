@@ -10,7 +10,7 @@ async function HomePage() {
     .then((res) => res.json())
   return (
     <>
-      <QuestionCard question={questions[0]} index={0} />
+      <QuestionCard question={questions[0]} />
     </>
   );
 }
